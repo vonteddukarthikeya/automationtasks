@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression]" parallel="tests">
+  <listeners>
+    <listener class-name="WebTesting.AutomationTask.CustomReports"/>
+  </listeners>
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="WebTesting.AutomationTask.TC001_VerifyAddUserDetails">
+        <methods>
+          <include name="CloseBrowser"/>
+          <include name="AbsaAssessmentTest"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- WebTesting.AutomationTask.TC001_VerifyAddUserDetails -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Regression] -->
